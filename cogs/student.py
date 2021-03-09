@@ -54,6 +54,14 @@ class student(commands.Cog):
         )
         embed.add_field(name = "Printf", value = "[PDF Printf](https://cdn.intra.42.fr/pdf/pdf/19314/fr.subject.pdf)")
         await ctx.send(embed = embed)
+
+    @commands.command()
+    async def maxvalue(self, ctx):
+        embed = discord.Embed (
+            colour = discord.Colour.dark_gold()
+        )
+        embed.add_field(name = "C Max Values", value = "[Docs Microsoft Link](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160)")
+        await ctx.send(embed = embed)
     #This is a command
 def setup(client):
     client.add_cog(student(client))
