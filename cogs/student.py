@@ -62,6 +62,23 @@ class student(commands.Cog):
         )
         embed.add_field(name = "C Max Values", value = "[Docs Microsoft Link](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160)")
         await ctx.send(embed = embed)
+
+    @commands.command()
+    async def cub3D(self, ctx):
+        embed = discord.Embed (
+            colour = discord.Colour.dark_gold()
+        )
+        embed.add_field(name = "cub3D", value = "[PDF cub3D](https://cdn.intra.42.fr/pdf/pdf/17280/fr.subject.pdf)")
+        await ctx.send(embed = embed)
+
+    @commands.command()
+    async def miniRT(self, ctx):
+        embed = discord.Embed (
+            colour = discord.Colour.dark_gold()
+        )
+        embed.add_field(name = "miniRT", value = "[PDF miniRT](https://cdn.intra.42.fr/pdf/pdf/19751/en.subject.pdf)")
+        await ctx.send(embed = embed)
+
     #This is a command
 def setup(client):
     client.add_cog(student(client))
