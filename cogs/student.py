@@ -79,6 +79,15 @@ class student(commands.Cog):
         embed.add_field(name = "miniRT", value = "[PDF miniRT](https://cdn.intra.42.fr/pdf/pdf/19751/en.subject.pdf)")
         await ctx.send(embed = embed)
 
+"""
+    @commands.command()
+    async def miniRT(self, ctx):
+        embed = discord.Embed (
+            colour = discord.Colour.dark_gold()
+        )
+        embed.add_field(name = "ft_server", value = "[PDF ft_server]()")
+        await ctx.send(embed = embed)
+"""
     #This is a command
 def setup(client):
     client.add_cog(student(client))
