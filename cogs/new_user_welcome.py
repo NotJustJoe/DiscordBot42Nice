@@ -90,7 +90,7 @@ class New_user(commands.Cog):
         try:
             newuser.msg = await self.client.wait_for(
                 "message",
-                timeout = 300,
+                timeout = 600,
                 check = lambda message: message.author == newuser.user2 and str(newuser.user2.id) != "808368692068876298"
             )
             if newuser.msg:
