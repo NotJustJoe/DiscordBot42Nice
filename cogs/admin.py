@@ -52,6 +52,7 @@ class Admin(commands.Cog):
         embed.add_field(name="!miniRT", value = "MiniRT PDF")
         embed.add_field(name="!ft_server", value = "Ft_Server PDF")
         embed.add_field(name="\u200b", value = "\u200b")
+        embed.add_field(name="!intra LOGIN", value = "Vous donne accès au Discord et à votre Role.")
         embed.set_author(name = 'All commands of 42 Bot')
         await ctx.send(embed=embed)
 
